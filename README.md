@@ -30,14 +30,13 @@ Annotated all 500 images using tool [yolo label](https://github.com/developer0hy
 ## Results
 
 ### Predicted Images
-<a href="url"><img src="https://github.com/anuragal/yolov3_custom_dataset/blob/master/out_put/image-2764.png" height="24%" width="24%" ></a>
-<a href="url"><img src="https://github.com/anuragal/yolov3_custom_dataset/blob/master/out_put/image-2771.png" height="24%" width="24%" ></a>
-<a href="url"><img src="https://github.com/anuragal/yolov3_custom_dataset/blob/master/out_put/image-2777.png" height="24%" width="24%" ></a>
-<a href="url"><img src="https://github.com/anuragal/yolov3_custom_dataset/blob/master/out_put/image-481.png" height="24%" width="24%" ></a>
+<a href="url"><img src="https://github.com/anuragal/yolov3_custom_dataset/blob/master/out_put/image-2764.png" height="49%" width="49%" ></a>
+<a href="url"><img src="https://github.com/anuragal/yolov3_custom_dataset/blob/master/out_put/image-2771.png" height="49%" width="49%" ></a>
+<a href="url"><img src="https://github.com/anuragal/yolov3_custom_dataset/blob/master/out_put/image-2777.png" height="49%" width="49%" ></a>
+<a href="url"><img src="https://github.com/anuragal/yolov3_custom_dataset/blob/master/out_put/image-481.png" height="49%" width="49%" ></a>
 
 
 ### Youtube Video
-Click to see video on Youtube
 
 [![](https://github.com/anuragal/yolov3_custom_dataset/blob/master/out_put/youtube.png)](https://www.youtube.com/watch?v=T-Bfob8iY3k)
 
