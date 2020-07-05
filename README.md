@@ -34,5 +34,5 @@ Annotated all 500 images using tool [yolo label](https://github.com/developer0hy
 
 ### Youtube Video
 
-![](https://www.youtube.com/watch?v=T-Bfob8iY3k)
+[![](https://i9.ytimg.com/vi/T-Bfob8iY3k/mq2.jpg?sqp=CIjLiPgF&rs=AOn4CLCr8xhexxiGcKmH1xo6du5nyjDFAg)](https://www.youtube.com/watch?v=T-Bfob8iY3k)
 
