@@ -12,3 +12,13 @@
 7. Share the link to your GitHub project with the steps as mentioned above
 8. Share the link of your YouTube video
 
+## Class: `eyeglasses`
+
+Downloaded [500 pictures](https://github.com/anuragal/yolov3_custom_dataset/tree/master/data/customdata) having eyeglasses in them. Pictures include only eyeglasses, people wearing eyeglasses & animals wearing eyeglasses.
+
+### Example pictures
+
+<a href="url"><img src="https://github.com/anuragal/yolov3_custom_dataset/blob/master/data/customdata/images/eyeglass001.jpg" height="24%" width="24%" ></a>
+<a href="url"><img src="https://github.com/anuragal/yolov3_custom_dataset/blob/master/data/customdata/images/eyeglass002.jpg" height="24%" width="24%" ></a>
+<a href="url"><img src="https://github.com/anuragal/yolov3_custom_dataset/blob/master/data/customdata/images/eyeglass004.jpg" height="24%" width="24%" ></a>
+<a href="url"><img src="https://github.com/anuragal/yolov3_custom_dataset/blob/master/data/customdata/images/eyeglass540.jpg" height="24%" width="24%" ></a>
