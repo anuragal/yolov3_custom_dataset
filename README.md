@@ -88,6 +88,14 @@ List of all the images in below format. Doble check the paths
     ./data/customdata/images/eyeglass002.jpg
     ./data/customdata/images/eyeglass003.png
 
+## cfg folder
+Download ['yolov3-spp.cfg'](https://github.com/pjreddie/darknet/blob/master/cfg/yolov3-spp.cfg) file and rename it to 'yolov3-custom.cfg'. Make following changes to your file (search and change on all places)
+      classes = 1
+      filters = 18                  # 18 = (4+1+1)*3
+      burn_in = 100 
+      max_batches = 5000 
+      steps = 4000, 4500
+      
 ## Weights Folder
 Download `yolov3-spp-ultralytics.pt` from [location](https://drive.google.com/drive/folders/1LezFG5g3BCW6iYaV89B2i64cqEUZD7e0) and put it in this folder. While model execution `best.pt` and `last.pt` will be added into this folder. Make sure to save `best.pt` as this will be used to predict the objects in image files later
 
