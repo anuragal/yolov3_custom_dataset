@@ -123,7 +123,7 @@ Copy these from the repo as it is
     git clone https://github.com/anuragal/yolov3_custom_dataset.git
 ```
 2. Mount google drive for downloading weights folder (Weights cannot be added to git as git has max limit of 100 MB for file size)
-```
+```python
     from google.colab import drive
     drive.mount('/content/gdrive')
 ```
