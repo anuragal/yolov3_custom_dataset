@@ -30,7 +30,7 @@ Annotated all 500 images using tool [yolo label](https://github.com/developer0hy
 ## Steps to run on colab
 
 ### Directory Structure
-    yolov3
+    yolov3_custom_dataset
       --utils                           # From this repo
         --datasets.py
         --....
@@ -104,6 +104,15 @@ Download `yolov3-spp-ultralytics.pt` from [location](https://drive.google.com/dr
 `Predict`: Input Images to be predicted
 `Output`: Predicted images by the model
 
+#### Images for prediction
+
+1. Download a very small (~10-30sec) video from youtube which shows your class.
+2. Use [ffmpeg](https://en.wikibooks.org/wiki/FFMPEG_An_Intermediate_Guide/image_sequence) to extract frames from the video.
+3. Add all images into `Predict` folder
+
+#### Once predicted
+1. Use [ffmpeg](https://en.wikibooks.org/wiki/FFMPEG_An_Intermediate_Guide/image_sequence) to convert the image files from `output` folder to video
+
 ### Utils folder & rest of .py files
 Copy these from the repo as it is
 
@@ -111,9 +120,28 @@ Copy these from the repo as it is
 
 1. Clone the repo
 ```
-git clone https://github.com/anuragal/yolov3_custom_dataset.git
+    git clone https://github.com/anuragal/yolov3_custom_dataset.git
 ```
-2. 
+2. Mount google drive for downloading weights folder (Weights cannot be added to git as git has max limit of 100 MB for file size)
+```
+    from google.colab import drive
+    drive.mount('/content/gdrive')
+```
+3. Copy `yolov3-spp-ultralytics.pt` from gdrive to `yolo/weights/` folder Or directly access from google drive
+4. Execute below command fot running the model
+```python
+    !python /content/yolov3_custom_dataset/train.py --data /content/yolov3_custom_dataset/data/customdata/custom.data --cache --epochs 300 --weights '/content/gdrive/My Drive/yolo/weights/yolov3-spp-ultralytics.pt' --cfg /content/yolov3_custom_dataset/data/cfg/yolov3-custom.cfg
+```
+This will add `best.pt` and `last.pt` to `weights` folder
+5. Predict
+```python
+    !python detect.py --conf-thres 0.5 --output '/content/yolov3_custom_dataset/output/' --weights '/content/yolov3_custom_dataset/weights/best.pt' --source '/content/yolov3_custom_dataset/predict/' --cfg /content/yolov3_custom_dataset/data/cfg/yolov3-custom.cfg
+```
+6. Show one of the images
+```python
+    from IPython.display import Image 
+    Image(filename='/content/gdrive/My Drive/yolo/out_put/image-067.png', width=600)
+```
 ## Results
 
 ### Predicted Images
@@ -124,6 +152,5 @@ git clone https://github.com/anuragal/yolov3_custom_dataset.git
 
 
 ### Youtube Video
-
 [![](https://github.com/anuragal/yolov3_custom_dataset/blob/master/out_put/youtube.png)](https://www.youtube.com/watch?v=T-Bfob8iY3k)
 
