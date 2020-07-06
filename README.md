@@ -130,13 +130,13 @@ Copy these from the repo as it is
 3. Copy `yolov3-spp-ultralytics.pt` from gdrive to `yolo/weights/` folder Or directly access from google drive
 4. Execute below command fot running the model
 ```python
-    !python /content/yolov3_custom_dataset/train.py --data /content/yolov3_custom_dataset/data/customdata/custom.data --cache --epochs 300 --weights '/content/gdrive/My Drive/yolo/weights/yolov3-spp-ultralytics.pt' --cfg /content/yolov3_custom_dataset/data/cfg/yolov3-custom.cfg
+!python /content/yolov3_custom_dataset/train.py --data /content/yolov3_custom_dataset/data/customdata/custom.data --cache --epochs 300 --weights '/content/gdrive/My Drive/yolo/weights/yolov3-spp-ultralytics.pt' --cfg /content/yolov3_custom_dataset/data/cfg/yolov3-custom.cfg
 ```
    This will add `best.pt` and `last.pt` to `weights` folder
 
 5. Predict
 ```python
-    !python detect.py --conf-thres 0.5 --output '/content/yolov3_custom_dataset/output/' --weights '/content/yolov3_custom_dataset/weights/best.pt' --source '/content/yolov3_custom_dataset/predict/' --cfg /content/yolov3_custom_dataset/data/cfg/yolov3-custom.cfg
+!python detect.py --conf-thres 0.5 --output '/content/yolov3_custom_dataset/output/' --weights '/content/yolov3_custom_dataset/weights/best.pt' --source '/content/yolov3_custom_dataset/predict/' --cfg /content/yolov3_custom_dataset/data/cfg/yolov3-custom.cfg
 ```
 6. Show one of the images
 ```python
