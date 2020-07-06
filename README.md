@@ -12,6 +12,14 @@
 7. Share the link to your GitHub project with the steps as mentioned above
 8. Share the link of your YouTube video
 
+## About YoloV3
+
+`You only look once`, or YOLO, is one of the faster object detection algorithms out there. Though it is no longer the most accurate object detection algorithm, it is a very good choice when you need real-time detection, without loss of too much accuracy
+
+YOLOv3 is the latest variant of a popular object detection algorithm YOLO. The model recognizes 80 different objects in images and videos, but most importantly it is super fast and nearly as accurate as Single Shot MultiBox (SSD)
+
+YOLO approaches the object detection problem in a completely different way then R-CNN. It forwards the whole image only once through the network
+
 ## Class: `eyeglasses`
 
 Downloaded [500 pictures](https://github.com/anuragal/yolov3_custom_dataset/tree/master/data/customdata) having eyeglasses in them. Pictures include only eyeglasses, people wearing eyeglasses & animals wearing eyeglasses.
