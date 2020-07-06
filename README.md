@@ -118,6 +118,8 @@ Copy these from the repo as it is
 
 ## Execution
 
+Link to [Colab File](https://github.com/anuragal/yolov3_custom_dataset/blob/master/yolov3_custom_dataset.ipynb)
+
 1. Clone the repo
 ```
     git clone https://github.com/anuragal/yolov3_custom_dataset.git
@@ -128,7 +130,7 @@ Copy these from the repo as it is
     drive.mount('/content/gdrive')
 ```
 3. Copy `yolov3-spp-ultralytics.pt` from gdrive to `yolo/weights/` folder Or directly access from google drive
-4. Execute below command fot running the model
+4. Execute below command for running the model
 ```python
 !python /content/yolov3_custom_dataset/train.py --data /content/yolov3_custom_dataset/data/customdata/custom.data --cache --epochs 300 --weights '/content/gdrive/My Drive/yolo/weights/yolov3-spp-ultralytics.pt' --cfg /content/yolov3_custom_dataset/data/cfg/yolov3-custom.cfg
 ```
