@@ -107,6 +107,13 @@ Download `yolov3-spp-ultralytics.pt` from [location](https://drive.google.com/dr
 ### Utils folder & rest of .py files
 Copy these from the repo as it is
 
+## Execution
+
+1. Clone the repo
+```
+git clone https://github.com/anuragal/yolov3_custom_dataset.git
+```
+2. 
 ## Results
 
 ### Predicted Images
