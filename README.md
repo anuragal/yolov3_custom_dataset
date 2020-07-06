@@ -23,9 +23,48 @@ Downloaded [500 pictures](https://github.com/anuragal/yolov3_custom_dataset/tree
 <a href="url"><img src="https://github.com/anuragal/yolov3_custom_dataset/blob/master/data/customdata/images/eyeglass004.jpg" height="24%" width="24%" ></a>
 <a href="url"><img src="https://github.com/anuragal/yolov3_custom_dataset/blob/master/data/customdata/images/eyeglass504.jpg" height="24%" width="24%" ></a>
 
-### Annotation
+## Annotation
 
 Annotated all 500 images using tool [yolo label](https://github.com/developer0hye/Yolo_Label)
+
+## Steps to run on colab
+
+### Directory Structure
+    yolov3
+      --utils                           # From this repo
+        --datasets.py
+        --....
+        --...
+      --data                            # Create of your own
+        --customdata                    
+          --images/                     # Add all annotated images in this folder
+            --img001.jpg
+            --img002.jpg
+            --...
+          --labels/                     # Add all annotated image labels in this folder
+            --img001.txt
+            --img002.txt
+            --...
+          custom.data                   # data file
+          custom.names                  # your class names
+          custom.txt                    # list of name of the images you want your network to be trained on. Currently we are using same file for test/train
+        --cfg
+          --yolov3-custom.cfg           # Yolo configuration file get it from https://github.com/pjreddie/darknet/blob/master/cfg/yolov3-spp.cfg
+      --weights
+        --yolov3-spp-ultralytics.pt     # Weights file get it from https://drive.google.com/drive/folders/1LezFG5g3BCW6iYaV89B2i64cqEUZD7e0
+        --best.pt                       # This will be created at the time of execution, make sure to save it after execution
+        --last.pt                       # This will be created at the time of execution
+      --output                          # Create empty folder for saving predicted images
+        --
+      --predict                         # Add images to be predicted in this folder
+        --
+      --train.py                        # From this repo
+      --test.py                         # From this repo
+      --models.py                       # From this repo
+      --detect.py                       # From this repo
+      
+      
+      
 
 ## Results
 
