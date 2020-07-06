@@ -63,8 +63,40 @@ Annotated all 500 images using tool [yolo label](https://github.com/developer0hy
       --models.py                       # From this repo
       --detect.py                       # From this repo
       
-      
-      
+### Data folder
+Add all annotated images into `/data/customdata/images` folder & add all labels into `/data/customdata/labels` folder
+
+#### custom.data
+For single class object detection add `classes=1`. Add paths of corresponding folders.
+
+      classes=1
+      train=data/customdata/custom.txt
+      valid=data/customdata/custom.txt
+      names=data/customdata/custom.names
+
+If `train and `test` data are different then provide seperate paths for them
+
+#### custom.names
+Custom object class
+
+    eyeglasses
+
+#### custom.txt
+List of all the images in below format. Doble check the paths
+
+    ./data/customdata/images/eyeglass001.jpg
+    ./data/customdata/images/eyeglass002.jpg
+    ./data/customdata/images/eyeglass003.png
+
+## Weights Folder
+Download `yolov3-spp-ultralytics.pt` from [location](https://drive.google.com/drive/folders/1LezFG5g3BCW6iYaV89B2i64cqEUZD7e0) and put it in this folder. While model execution `best.pt` and `last.pt` will be added into this folder. Make sure to save `best.pt` as this will be used to predict the objects in image files later
+
+## Predict & Output folder
+`Predict`: Input Images to be predicted
+`Output`: Predicted images by the model
+
+## Utils folder & rest of .py files
+Copy these from the repo as it is
 
 ## Results
 
