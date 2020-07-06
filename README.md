@@ -74,7 +74,7 @@ For single class object detection add `classes=1`. Add paths of corresponding fo
       valid=data/customdata/custom.txt
       names=data/customdata/custom.names
 
-If `train and `test` data are different then provide seperate paths for them
+If `train` and `test` data are different then provide seperate paths for them
 
 #### custom.names
 Custom object class
@@ -89,7 +89,8 @@ List of all the images in below format. Doble check the paths
     ./data/customdata/images/eyeglass003.png
 
 ## cfg folder
-Download ['yolov3-spp.cfg'](https://github.com/pjreddie/darknet/blob/master/cfg/yolov3-spp.cfg) file and rename it to 'yolov3-custom.cfg'. Make following changes to your file (search and change on all places)
+Download [yolov3-spp.cfg](https://github.com/pjreddie/darknet/blob/master/cfg/yolov3-spp.cfg) file and rename it to `yolov3-custom.cfg`. Make following changes to your file (search and change on all places)
+
       classes = 1
       filters = 18                  # 18 = (4+1+1)*3
       burn_in = 100 
